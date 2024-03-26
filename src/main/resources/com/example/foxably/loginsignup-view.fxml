@@ -21,7 +21,7 @@
          <children>
             <ImageView fitHeight="849.0" fitWidth="655.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@login.png" />
+                  <Image url="@icon/login.png" />
                </image>
             </ImageView>
          </children>
@@ -106,7 +106,7 @@
                         </Button>
                         <ImageView fitHeight="164.0" fitWidth="149.0" layoutX="86.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@fox2.png" />
+                              <Image url="@icon/fox2.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -175,7 +175,7 @@
             </AnchorPane>
             <ImageView fitHeight="46.0" fitWidth="59.0" layoutX="244.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@foxicon.png" />
+                  <Image url="@icon/foxicon.png" />
                </image>
                <effect>
                   <DropShadow height="36.0" radius="17.5" width="36.0">

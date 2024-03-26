@@ -39,7 +39,7 @@
                <children>
                   <ImageView fitHeight="46.0" fitWidth="59.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@foxicon.png" />
+                        <Image url="@icon/foxicon.png" />
                      </image>
                      <effect>
                         <DropShadow height="36.0" radius="17.5" width="36.0">
@@ -72,7 +72,7 @@
                      <children>
                         <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="3.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@search.png" />
+                              <Image url="@icon/search.png" />
                            </image>
                         </ImageView>
                      </children>
@@ -93,7 +93,7 @@
             </Pane>
             <ImageView fitHeight="48.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@foxuser.png" />
+                  <Image url="@icon/foxuser.png" />
                </image>
                <HBox.margin>
                   <Insets left="15.0" top="5.0" />
@@ -127,7 +127,7 @@
                      <children>
                         <ImageView fitHeight="32.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@home.png" />
+                              <Image url="@icon/home.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="10.0" />
@@ -149,7 +149,7 @@
                         </JFXButton>
                         <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@course.png" />
+                              <Image url="@icon/course.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="-40.0" />
@@ -169,7 +169,7 @@
                         </JFXButton>
                         <ImageView fitHeight="32.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@todolist.png" />
+                              <Image url="@icon/todolist.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="-40.0" />
@@ -189,7 +189,7 @@
                         </JFXButton>
                         <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@chat.png" />
+                              <Image url="@icon/chat.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="-40.0" />
@@ -224,7 +224,7 @@
                      <children>
                         <ImageView fitHeight="198.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@fox1.png" />
+                              <Image url="@icon/fox1.png" />
                            </image>
                            <effect>
                               <DropShadow>
@@ -616,7 +616,7 @@
                                     <Insets top="130.0" />
                                  </HBox.margin>
                                  <image>
-                                    <Image url="@fox3.png" />
+                                    <Image url="@icon/fox3.png" />
                                  </image>
                                  <effect>
                                     <DropShadow height="40.0" radius="19.5" width="40.0">
