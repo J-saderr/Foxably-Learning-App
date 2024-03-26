@@ -12,7 +12,7 @@ Foxably is an intuitive learning application designed to simplify the process of
 
 ## Installation
 - Clone the repository:
-git clone [https://github.com/your-username/foxably.git](https://github.com/J-saderr/Foxably-Learning-App)
+git clone [https://github.com/J-saderr/Foxably-Learning-App]
 
 - Install dependencies:
 npm install
