@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="843.0" prefWidth="1306.0" styleClass="frame09" stylesheets="@foxstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="840.0" prefWidth="635.0">
+         <children>
+            <ImageView fitHeight="849.0" fitWidth="655.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="655.0" prefHeight="843.0" prefWidth="655.0" styleClass="frame05" stylesheets="@foxstyle.css">
+         <children>
+            <AnchorPane layoutX="125.0" layoutY="128.0" prefHeight="588.0" prefWidth="406.0" styleClass="frame03" stylesheets="@foxstyle.css">
+               <children>
+                  <AnchorPane fx:id="login_form" layoutX="42.0" layoutY="4.0" prefHeight="629.0" prefWidth="323.0" stylesheets="@foxstyle.css" visible="false">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="29.0" layoutY="56.0" prefHeight="32.0" prefWidth="246.0" text="Sign In Account" textAlignment="CENTER">
+                           <font>
+                              <Font name="Montserrat Black" size="26.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.9607843160629272" green="0.9333333373069763" blue="0.8039215803146362" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <TextField fx:id="login_username" layoutX="37.0" layoutY="122.0" prefHeight="30.0" prefWidth="246.0" promptText="Username" styleClass="frame09" stylesheets="@foxstyle.css">
+                           <font>
+                              <Font name="Montserrat Medium" size="14.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="login_password" editable="false" layoutX="38.0" layoutY="167.0" prefHeight="30.0" prefWidth="246.0" promptText="Password" styleClass="frame09" stylesheets="@foxstyle.css">
+                           <font>
+                              <Font name="Montserrat Medium" size="14.0" />
+                           </font>
+                        </PasswordField>
+                        <TextField fx:id="login_showPassword" layoutX="38.0" layoutY="168.0" prefHeight="19.0" prefWidth="246.0" promptText="Password" styleClass="frame09" stylesheets="@foxstyle.css" visible="false">
+                           <font>
+                              <Font name="Montserrat Medium" size="14.0" />
+                           </font>
+                        </TextField>
+                        <CheckBox fx:id="login_selectShowPassword" layoutX="41.0" layoutY="207.0" mnemonicParsing="false" onAction="#showPassword" stylesheets="@foxstyle.css" text="Show Password">
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.9607843160629272" green="0.9333333373069763" blue="0.8039215803146362" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                           <font>
+                              <Font name="Montserrat Medium" size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <Button fx:id="login_btn" layoutX="38.0" layoutY="248.0" mnemonicParsing="false" onAction="#login" prefHeight="40.0" prefWidth="237.0" styleClass="frame01" stylesheets="@foxstyle.css" text="Login" textFill="#ed765e">
+                           <font>
+                              <Font name="Montserrat ExtraBold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="88.0" layoutY="347.0" prefHeight="18.0" prefWidth="138.0" text="Register Account" textFill="#f5eecd">
+                           <font>
+                              <Font name="Montserrat Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="login_createAccount" layoutX="34.0" layoutY="372.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="30.0" prefWidth="237.0" styleClass="frame09" stylesheets="@foxstyle.css" text="Create Account" textFill="#ed765e">
+                           <font>
+                              <Font name="Montserrat ExtraBold" size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="164.0" fitWidth="149.0" layoutX="86.0" layoutY="424.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@fox2.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="signup_form" layoutX="47.0" layoutY="58.0" prefHeight="520.0" prefWidth="312.0" styleClass="black-bg">
+                     <children>
+                        <Label layoutX="99.0" layoutY="419.0" text="Sign In Account" textFill="WHITE">
+                           <font>
+                              <Font name="Montserrat Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="signup_email" layoutX="39.0" layoutY="91.0" prefHeight="30.0" prefWidth="237.0" promptText="Email Address" styleClass="frame09" stylesheets="@foxstyle.css">
+                           <font>
+                              <Font name="Montserrat Medium" size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="signup_username" layoutX="39.0" layoutY="132.0" prefHeight="30.0" prefWidth="237.0" promptText="Username" styleClass="frame09" stylesheets="@../design/style.css">
+                           <font>
+                              <Font name="Montserrat Medium" size="14.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="signup_password" layoutX="39.0" layoutY="174.0" prefHeight="30.0" prefWidth="237.0" promptText="Password" styleClass="frame09" stylesheets="@../design/style.css">
+                           <font>
+                              <Font name="Montserrat Medium" size="14.0" />
+                           </font>
+                        </PasswordField>
+                        <PasswordField fx:id="signup_cPassword" layoutX="37.0" layoutY="217.0" prefHeight="30.0" prefWidth="237.0" promptText="Confirm Password" styleClass="frame09" stylesheets="@../design/style.css">
+                           <font>
+                              <Font name="Montserrat Medium" size="14.0" />
+                           </font>
+                        </PasswordField>
+                        <Button fx:id="signup_btn" layoutX="37.0" layoutY="271.0" mnemonicParsing="false" onAction="#register" prefHeight="40.0" prefWidth="237.0" styleClass="frame01" stylesheets="@foxstyle.css" text="Sign Up" textFill="#ed765e">
+                           <font>
+                              <Font name="Montserrat SemiBold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="signup_loginAccount" layoutX="38.0" layoutY="453.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="30.0" prefWidth="237.0" styleClass="frame09" stylesheets="@foxstyle.css" text="Login Account" textFill="#ed765e">
+                           <font>
+                              <Font name="Montserrat SemiBold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="24.0" layoutY="1.0" prefHeight="32.0" prefWidth="246.0" text="Sign Up Account" textAlignment="CENTER">
+                           <font>
+                              <Font name="Montserrat Black" size="26.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.9607843160629272" green="0.9333333373069763" blue="0.8039215803146362" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="46.0" fitWidth="59.0" layoutX="244.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@foxicon.png" />
+               </image>
+               <effect>
+                  <DropShadow height="36.0" radius="17.5" width="36.0">
+                     <color>
+                        <Color red="0.8156862854957581" green="0.7568627595901489" blue="0.6196078658103943" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Label layoutX="299.0" layoutY="40.0" prefHeight="49.0" prefWidth="114.0" text="FOXABLY" textFill="#ed765e">
+               <font>
+                  <Font name="Montserrat Black" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow height="36.0" radius="17.5" width="36.0">
+                     <color>
+                        <Color red="0.8156862854957581" green="0.7568627595901489" blue="0.6196078658103943" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

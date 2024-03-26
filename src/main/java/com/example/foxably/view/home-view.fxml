@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1306.0" stylesheets="@foxstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="60.0" prefWidth="1306.0" styleClass="frame07" stylesheets="@foxstyle.css" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="30.0" right="30.0" />
+         </padding>
+         <effect>
+            <DropShadow height="40.0" radius="19.5" width="40.0">
+               <color>
+                  <Color red="0.7763158082962036" green="0.49262508749961853" blue="0.24439571797847748" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Pane prefHeight="60.0" prefWidth="174.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="59.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@foxicon.png" />
+                     </image>
+                     <effect>
+                        <DropShadow height="36.0" radius="17.5" width="36.0">
+                           <color>
+                              <Color red="0.8274509906768799" green="0.3607843220233917" blue="0.1921568661928177" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <Label layoutX="57.0" layoutY="6.0" prefHeight="49.0" prefWidth="132.0" text="FOXABLY" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Black" size="20.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="36.0" radius="17.5" width="36.0">
+                           <color>
+                              <Color red="0.8274509906768799" green="0.3607843220233917" blue="0.1921568661928177" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane maxHeight="-Infinity" prefHeight="43.0" prefWidth="423.0" styleClass="frame01" stylesheets="@foxstyle.css">
+               <HBox.margin>
+                  <Insets left="600.0" top="8.0" />
+               </HBox.margin>
+               <children>
+                  <Pane layoutX="11.0" prefHeight="43.0" prefWidth="41.0">
+                     <children>
+                        <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="3.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@search.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <TextField layoutX="37.0" layoutY="9.0" prefHeight="25.0" prefWidth="362.0" promptText="Search for courses..." styleClass="trans" stylesheets="@foxstyle.css">
+                     <font>
+                        <Font name="Montserrat Light Italic" size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+               <effect>
+                  <DropShadow height="36.0" radius="17.5" width="36.0">
+                     <color>
+                        <Color red="0.8026315569877625" green="0.49049708247184753" blue="0.28240740299224854" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Pane>
+            <ImageView fitHeight="48.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@foxuser.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="15.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="780.0" prefWidth="94.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="446.0" prefWidth="58.0" styleClass="frame01" stylesheets="@foxstyle.css">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="25.0" top="150.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow height="36.0" radius="17.5" width="36.0">
+                     <color>
+                        <Color red="0.8552631735801697" green="0.8552631735801697" blue="0.8552631735801697" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="frame09" stylesheets="@foxstyle.css">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="32.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <JFXButton graphicTextGap="0.0" opacity="0.0" prefHeight="46.0" prefWidth="49.0" styleClass="trans" stylesheets="@foxstyle.css">
+                           <HBox.margin>
+                              <Insets left="-40.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0">
+                     <children>
+                        <JFXButton opacity="0.0" prefHeight="55.0" prefWidth="48.0" visible="false">
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@course.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-40.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0">
+                     <children>
+                        <JFXButton prefHeight="55.0" prefWidth="46.0" visible="false">
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <ImageView fitHeight="32.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@todolist.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-40.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0">
+                     <children>
+                        <JFXButton prefHeight="41.0" prefWidth="53.0" visible="false">
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@chat.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="-40.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="780.0" prefWidth="1093.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="839.0" styleClass="frame09">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="20.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow height="42.75" radius="21.4375" width="45.0">
+                     <color>
+                        <Color red="0.8549019694328308" green="0.8549019694328308" blue="0.8549019694328308" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <HBox prefHeight="198.0" prefWidth="818.0">
+                     <children>
+                        <ImageView fitHeight="198.0" fitWidth="210.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@fox1.png" />
+                           </image>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.7368420958518982" green="0.7326348423957825" blue="0.6106237769126892" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </ImageView>
+                        <Label prefHeight="77.0" prefWidth="655.0" text="SPARK YOU CREATIVITY" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Montserrat Black" size="46.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.8067600131034851" green="0.8100000023841858" blue="0.6966000199317932" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.9966442953020134">
+                                       <color>
+                                          <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Label layoutX="208.0" layoutY="10.0" prefHeight="118.0" prefWidth="641.0" text="&quot;The capacity to learn is a gift; the ability to learn is a skill; the willingness &#10;to learn is a choice. Education is not preparation for life; education is life &#10;itself. The only person who is educated is the one who has learned how to &#10;learn and change.&quot; - Carl Rogers" textAlignment="JUSTIFY" textFill="#ed765e">
+                           <font>
+                              <Font name="Montserrat Medium" size="15.0" />
+                           </font>
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.8067600131034851" green="0.8100000023841858" blue="0.6966000199317932" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <HBox.margin>
+                              <Insets left="-650.0" top="70.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="624.0" prefWidth="974.0">
+               <children>
+                  <Label prefHeight="75.0" prefWidth="978.0" text="Courses">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9966442953020134">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+                  <ScrollPane prefHeight="454.0" prefWidth="962.0">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="780.0" prefWidth="250.0" styleClass="trans" stylesheets="@foxstyle.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="BOTTOM_LEFT" prefHeight="65.0" prefWidth="240.0" text="To-do list">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9966442953020134">
+                           <color>
+                              <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="250.0">
+               <children>
+                  <Circle radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9966442953020134">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Circle>
+                  <Label prefHeight="19.0" prefWidth="194.0" text="Vỏ Thẻo" textFill="#ed765e">
+                     <font>
+                        <Font name="Montserrat Medium" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Line endX="328.5857849121094" endY="1.0001106262207031" startX="133.2928924560547" startY="-5.793571472167969E-5">
+                     <HBox.margin>
+                        <Insets left="-195.0" top="20.0" />
+                     </HBox.margin>
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="250.0">
+               <children>
+                  <Circle radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9966442953020134">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <Label prefHeight="19.0" prefWidth="195.0" text="Cà thơi" textFill="#ed765e">
+                     <font>
+                        <Font name="Montserrat Medium" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Line endX="328.5857849121094" endY="1.0001106262207031" startX="133.2928924560547" startY="-5.793571472167969E-5">
+                     <HBox.margin>
+                        <Insets left="-195.0" top="20.0" />
+                     </HBox.margin>
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="250.0">
+               <children>
+                  <Circle radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9966442953020134">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Circle>
+                  <Label prefHeight="19.0" prefWidth="198.0" text="Mê KJW" textFill="#ed765e">
+                     <font>
+                        <Font name="Montserrat Medium" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Line endX="328.5857849121094" endY="1.0001106262207031" startX="133.2928924560547" startY="-5.793571472167969E-5">
+                     <HBox.margin>
+                        <Insets left="-195.0" top="20.0" />
+                     </HBox.margin>
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="250.0">
+               <children>
+                  <Circle radius="5.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9966442953020134">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                  </Circle>
+                  <Label prefHeight="19.0" prefWidth="197.0" text="Trầm Keo" textFill="#ed765e">
+                     <font>
+                        <Font name="Montserrat Medium" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Line endX="328.5857849121094" endY="1.0001106262207031" startX="133.2928924560547" startY="-5.793571472167969E-5">
+                     <HBox.margin>
+                        <Insets left="-195.0" top="20.0" />
+                     </HBox.margin>
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="301.0" prefWidth="250.0">
+               <children>
+                  <Button graphicTextGap="0.0" mnemonicParsing="false" prefHeight="372.0" prefWidth="232.0" styleClass="trans" text="Button">
+                     <graphic>
+                        <HBox prefHeight="366.0" prefWidth="221.0" styleClass="frame03" stylesheets="@foxstyle.css">
+                           <effect>
+                              <DropShadow height="40.0" radius="19.5" width="40.0">
+                                 <color>
+                                    <Color red="0.8289473652839661" green="0.8289473652839661" blue="0.8289473652839661" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                           <children>
+                              <ImageView fitHeight="252.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets top="130.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@fox3.png" />
+                                 </image>
+                                 <effect>
+                                    <DropShadow height="40.0" radius="19.5" width="40.0">
+                                       <color>
+                                          <Color red="0.6973684430122375" green="0.3446485102176666" blue="0.32608431577682495" />
+                                       </color>
+                                    </DropShadow>
+                                 </effect>
+                              </ImageView>
+                              <Label alignment="CENTER" prefHeight="134.0" prefWidth="217.0" text="CHAT WITH&#10;FOXABLY" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Montserrat ExtraBold" size="28.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="-235.0" />
+                                 </HBox.margin>
+                                 <textFill>
+                                    <LinearGradient endX="1.0" endY="1.0">
+                                       <stops>
+                                          <Stop>
+                                             <color>
+                                                <Color red="0.9607843160629272" green="0.9333333373069763" blue="0.8039215803146362" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="0.9966442953020134">
+                                             <color>
+                                                <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                                             </color>
+                                          </Stop>
+                                          <Stop offset="1.0">
+                                             <color>
+                                                <Color red="1.0" green="0.9449999928474426" blue="0.7799999713897705" />
+                                             </color>
+                                          </Stop>
+                                       </stops>
+                                    </LinearGradient>
+                                 </textFill>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
