@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -18,7 +17,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1306.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <top>
@@ -40,7 +38,7 @@
                      <children>
                         <ImageView fitHeight="46.0" fitWidth="59.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@foxicon.png" />
+                              <Image url="@icon/foxicon.png" />
                            </image>
                            <effect>
                               <DropShadow height="36.0" radius="17.5" width="36.0">
@@ -108,102 +106,106 @@
    <left>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox prefHeight="446.0" prefWidth="58.0" styleClass="frame01" stylesheets="@foxstyle.css">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <effect>
-                  <DropShadow height="36.0" radius="17.5" width="36.0">
-                     <color>
-                        <Color red="0.8552631735801697" green="0.8552631735801697" blue="0.8552631735801697" />
-                     </color>
-                  </DropShadow>
-               </effect>
+            <VBox prefHeight="796.0" prefWidth="100.0" stylesheets="@style/foxstyle.css">
                <children>
-                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="trans" stylesheets="@foxstyle.css">
-                     <VBox.margin>
-                        <Insets top="40.0" />
-                     </VBox.margin>
+                  <VBox prefHeight="446.0" prefWidth="58.0" styleClass="frame01" stylesheets="@foxstyle.css">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <effect>
+                        <DropShadow height="36.0" radius="17.5" width="36.0">
+                           <color>
+                              <Color red="0.8552631735801697" green="0.8552631735801697" blue="0.8552631735801697" />
+                           </color>
+                        </DropShadow>
+                     </effect>
                      <children>
-                        <ImageView fitHeight="32.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icon/home.png" />
-                           </image>
-                           <HBox.margin>
-                              <Insets left="10.0" />
-                           </HBox.margin>
-                        </ImageView>
-                        <JFXButton graphicTextGap="0.0" opacity="0.0" prefHeight="46.0" prefWidth="49.0" styleClass="trans" stylesheets="@foxstyle.css">
-                           <HBox.margin>
-                              <Insets left="-40.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0">
-                     <children>
-                        <JFXButton opacity="0.0" prefHeight="55.0" prefWidth="48.0" visible="false">
-                           <HBox.margin>
-                              <Insets left="-10.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                        <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icon/course.png" />
-                           </image>
-                           <HBox.margin>
-                              <Insets left="-40.0" />
-                           </HBox.margin>
-                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="trans" stylesheets="@foxstyle.css">
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fitHeight="32.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icon/home.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="81.0" styleClass="trans" text="Button" visible="false">
+                                 <HBox.margin>
+                                    <Insets left="-40.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="frame09" stylesheets="@foxstyle.css">
+                           <children>
+                              <ImageView fitHeight="32.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icon/course.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="-15.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="65.0" styleClass="trans" text="Button" visible="false">
+                                 <HBox.margin>
+                                    <Insets left="-40.0" right="-40.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0">
+                           <children>
+                              <ImageView fitHeight="32.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icon/todolist.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="62.0" prefWidth="76.0" styleClass="trans" text="Button" visible="false">
+                                 <HBox.margin>
+                                    <Insets left="-30.0" right="-40.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="trans" stylesheets="@foxstyle.css">
+                           <children>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icon/chat.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="-20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="75.0" styleClass="trans" text="Button" visible="false">
+                                 <HBox.margin>
+                                    <Insets left="-40.0" right="-50.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
                      </children>
                      <VBox.margin>
-                        <Insets top="50.0" />
+                        <Insets left="25.0" top="150.0" />
                      </VBox.margin>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0">
-                     <children>
-                        <JFXButton prefHeight="55.0" prefWidth="46.0" visible="false">
-                           <HBox.margin>
-                              <Insets left="-10.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                        <ImageView fitHeight="32.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icon/todolist.png" />
-                           </image>
-                           <HBox.margin>
-                              <Insets left="-40.0" />
-                           </HBox.margin>
-                        </ImageView>
-                     </children>
-                     <VBox.margin>
-                        <Insets top="50.0" />
-                     </VBox.margin>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="frame09" stylesheets="@foxstyle.css">
-                     <children>
-                        <JFXButton prefHeight="41.0" prefWidth="53.0" visible="false">
-                           <HBox.margin>
-                              <Insets left="-10.0" />
-                           </HBox.margin>
-                        </JFXButton>
-                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@icon/chat.png" />
-                           </image>
-                           <HBox.margin>
-                              <Insets left="-40.0" />
-                           </HBox.margin>
-                        </ImageView>
-                     </children>
-                     <VBox.margin>
-                        <Insets top="50.0" />
-                     </VBox.margin>
-                  </HBox>
+                  </VBox>
                </children>
-               <VBox.margin>
-                  <Insets left="25.0" top="150.0" />
-               </VBox.margin>
             </VBox>
          </children>
       </VBox>
