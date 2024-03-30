@@ -123,17 +123,17 @@
                               <Font name="Montserrat Medium" size="14.0" />
                            </font>
                         </TextField>
-                        <TextField fx:id="signup_username" layoutX="39.0" layoutY="132.0" prefHeight="30.0" prefWidth="237.0" promptText="Username" styleClass="frame09" stylesheets="@../design/style.css">
+                        <TextField fx:id="signup_username" layoutX="39.0" layoutY="132.0" prefHeight="30.0" prefWidth="237.0" promptText="Username" styleClass="frame09" stylesheets="@foxstyle.css">
                            <font>
                               <Font name="Montserrat Medium" size="14.0" />
                            </font>
                         </TextField>
-                        <PasswordField fx:id="signup_password" layoutX="39.0" layoutY="174.0" prefHeight="30.0" prefWidth="237.0" promptText="Password" styleClass="frame09" stylesheets="@../design/style.css">
+                        <PasswordField fx:id="signup_password" layoutX="39.0" layoutY="174.0" prefHeight="30.0" prefWidth="237.0" promptText="Password" styleClass="frame09" stylesheets="@foxstyle.css">
                            <font>
                               <Font name="Montserrat Medium" size="14.0" />
                            </font>
                         </PasswordField>
-                        <PasswordField fx:id="signup_cPassword" layoutX="37.0" layoutY="217.0" prefHeight="30.0" prefWidth="237.0" promptText="Confirm Password" styleClass="frame09" stylesheets="@../design/style.css">
+                        <PasswordField fx:id="signup_cPassword" layoutX="37.0" layoutY="217.0" prefHeight="30.0" prefWidth="237.0" promptText="Confirm Password" styleClass="frame09" stylesheets="@foxstyle.css">
                            <font>
                               <Font name="Montserrat Medium" size="14.0" />
                            </font>

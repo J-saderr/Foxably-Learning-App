@@ -19,7 +19,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1306.0" stylesheets="@foxstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1306.0" stylesheets="@foxstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foxably.HomeController">
    <top>
       <HBox prefHeight="60.0" prefWidth="1306.0" styleClass="frame07" stylesheets="@foxstyle.css" BorderPane.alignment="CENTER">
          <padding>
@@ -103,7 +103,7 @@
    <left>
       <VBox prefHeight="780.0" prefWidth="94.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox prefHeight="796.0" prefWidth="100.0" stylesheets="@style/foxstyle.css">
+            <VBox prefHeight="796.0" prefWidth="100.0" stylesheets="@foxstyle.css">
                <children>
                   <VBox prefHeight="446.0" prefWidth="58.0" styleClass="frame01" stylesheets="@foxstyle.css">
                      <opaqueInsets>
@@ -130,7 +130,7 @@
                                     <Insets left="20.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="61.0" prefWidth="81.0" styleClass="trans" text="Button" visible="false">
+                              <Button fx:id="Home" mnemonicParsing="false" onAction="#switchToHome" prefHeight="61.0" prefWidth="81.0" styleClass="trans">
                                  <HBox.margin>
                                     <Insets left="-40.0" />
                                  </HBox.margin>
@@ -147,7 +147,7 @@
                                     <Insets left="-15.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="54.0" prefWidth="65.0" styleClass="trans" text="Button" visible="false">
+                              <Button fx:id="Course" mnemonicParsing="false" onAction="#switchToCourse" prefHeight="54.0" prefWidth="65.0" styleClass="trans">
                                  <HBox.margin>
                                     <Insets left="-40.0" right="-40.0" />
                                  </HBox.margin>
@@ -164,10 +164,10 @@
                                     <Image url="@icon/todolist.png" />
                                  </image>
                                  <HBox.margin>
-                                    <Insets />
+                                    <Insets left="-10.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="62.0" prefWidth="76.0" styleClass="trans" text="Button" visible="false">
+                              <Button mnemonicParsing="false" onAction="#switchToTodolist" prefHeight="51.0" prefWidth="56.0" styleClass="trans">
                                  <HBox.margin>
                                     <Insets left="-30.0" right="-40.0" />
                                  </HBox.margin>
@@ -187,7 +187,7 @@
                                     <Insets left="-20.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="75.0" styleClass="trans" text="Button" visible="false">
+                              <Button mnemonicParsing="false" onAction="#switchToChat" prefHeight="58.0" prefWidth="75.0" styleClass="trans">
                                  <HBox.margin>
                                     <Insets left="-40.0" right="-50.0" />
                                  </HBox.margin>

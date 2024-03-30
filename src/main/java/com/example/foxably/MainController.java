@@ -15,18 +15,19 @@ import java.sql.ResultSet;
 public class MainController {
     private Stage stage;
     private Scene scene;
-    public Connection connect;
-    public PreparedStatement prepare;
-    public ResultSet result;
 
-    public static Connection connectDb(){
-        try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/Book", "root", "pass"); // address, database username, database password
-            return connect;
-        }catch(Exception e){e.printStackTrace();}
-        return null;
-    }
+//    public Connection connect;
+//    public PreparedStatement prepare;
+//    public ResultSet result;
+//
+//    public static Connection connectDb(){
+//        try{
+//            Class.forName("com.mysql.cj.jdbc.Driver");
+//            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/Book", "root", "pass"); // address, database username, database password
+//            return connect;
+//        }catch(Exception e){e.printStackTrace();}
+//        return null;
+//    }
     public void switchToChat(ActionEvent event) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/foxably/chat-view.fxml"));
         scene = new Scene(root);
@@ -35,16 +36,12 @@ public class MainController {
         stage.show();
     }
 
-    public void switchToCourse(ActionEvent event) {
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("/com/example/foxably/course-view.fxml"));
-            scene = new Scene(root);
-            stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-            stage.setScene(scene);
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace(); // This will print the stack trace of the exception
-        }
+    public void switchToCourse(ActionEvent event) throws Exception{
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/foxably/course-view.fxml"));
+        scene = new Scene(root);
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
 
@@ -54,7 +51,6 @@ public class MainController {
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-        System.out.println("hi");
     }
 
     public void switchToTodolist(ActionEvent event) throws Exception{
