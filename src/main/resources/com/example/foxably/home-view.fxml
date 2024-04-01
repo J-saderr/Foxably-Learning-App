@@ -326,6 +326,9 @@
                      <VBox.margin>
                         <Insets left="50.0" right="50.0" />
                      </VBox.margin>
+                     <content>
+                        <HBox fx:id="AllCoursesContainer" prefHeight="439.0" prefWidth="858.0" />
+                     </content>
                   </ScrollPane>
                </children>
             </VBox>

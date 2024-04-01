@@ -19,7 +19,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1306.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foxably.Controller.CourseController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1306.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foxably.Courses.ControllerInCourseContent">
    <top>
       <HBox prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
@@ -282,7 +282,7 @@
                         <Insets left="50.0" right="50.0" />
                      </VBox.margin>
                   </JFXTextArea>
-                  <JFXButton text="Chapter 0. Introduction" underline="true">
+                  <JFXButton onAction="#Chapter0" text="Chapter 0. Introduction" underline="true">
                      <VBox.margin>
                         <Insets left="50.0" right="50.0" />
                      </VBox.margin>

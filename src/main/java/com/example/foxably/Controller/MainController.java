@@ -23,7 +23,7 @@ public class MainController {
     public static Connection connectDb(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/users", "root", "pass"); // address, database username, database password
+            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/Course", "root", "pass"); // address, database username, database password
             return connect;
         }catch(Exception e){e.printStackTrace();}
         return null;
