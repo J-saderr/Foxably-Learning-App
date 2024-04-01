@@ -1,4 +1,4 @@
-package com.example.foxably;
+package com.example.foxably.Controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -16,18 +16,18 @@ public class MainController {
     private Stage stage;
     private Scene scene;
 
-//    public Connection connect;
-//    public PreparedStatement prepare;
-//    public ResultSet result;
-//
-//    public static Connection connectDb(){
-//        try{
-//            Class.forName("com.mysql.cj.jdbc.Driver");
-//            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/Book", "root", "pass"); // address, database username, database password
-//            return connect;
-//        }catch(Exception e){e.printStackTrace();}
-//        return null;
-//    }
+    public Connection connect;
+    public PreparedStatement prepare;
+    public ResultSet result;
+
+    public static Connection connectDb(){
+        try{
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/users", "root", "pass"); // address, database username, database password
+            return connect;
+        }catch(Exception e){e.printStackTrace();}
+        return null;
+    }
     public void switchToChat(ActionEvent event) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/com/example/foxably/chat-view.fxml"));
         scene = new Scene(root);

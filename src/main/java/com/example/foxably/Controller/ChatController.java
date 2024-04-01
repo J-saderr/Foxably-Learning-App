@@ -1,4 +1,4 @@
-package com.example.foxably;
+package com.example.foxably.Controller;
 
 //import javafx.fxml.FXML;
 //import javafx.scene.control.Button;
@@ -11,7 +11,7 @@ package com.example.foxably;
 //
 //import java.io.File;
 //
-public class ChatController extends MainController{
+public class ChatController extends MainController {
 //    @FXML
 //    private ListView chatArea;
 //    @FXML

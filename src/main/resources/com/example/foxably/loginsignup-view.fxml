@@ -14,8 +14,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="843.0" prefWidth="1306.0" styleClass="frame09" stylesheets="@foxstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="843.0" prefWidth="1306.0" styleClass="frame09" stylesheets="@foxstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foxably.Login.LoginController">
    <children>
       <AnchorPane prefHeight="840.0" prefWidth="635.0">
          <children>
@@ -30,7 +29,7 @@
          <children>
             <AnchorPane layoutX="125.0" layoutY="128.0" prefHeight="588.0" prefWidth="406.0" styleClass="frame03" stylesheets="@foxstyle.css">
                <children>
-                  <AnchorPane fx:id="login_form" layoutX="42.0" layoutY="4.0" prefHeight="629.0" prefWidth="323.0" stylesheets="@foxstyle.css" visible="false">
+                  <AnchorPane fx:id="login_form" layoutX="42.0" layoutY="4.0" prefHeight="629.0" prefWidth="323.0" stylesheets="@foxstyle.css">
                      <children>
                         <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" layoutX="29.0" layoutY="56.0" prefHeight="32.0" prefWidth="246.0" text="Sign In Account" textAlignment="CENTER">
                            <font>
@@ -58,7 +57,7 @@
                               <Font name="Montserrat Medium" size="14.0" />
                            </font>
                         </TextField>
-                        <PasswordField fx:id="login_password" editable="false" layoutX="38.0" layoutY="167.0" prefHeight="30.0" prefWidth="246.0" promptText="Password" styleClass="frame09" stylesheets="@foxstyle.css">
+                        <PasswordField fx:id="login_password" layoutX="38.0" layoutY="167.0" prefHeight="30.0" prefWidth="246.0" promptText="Password" styleClass="frame09" stylesheets="@foxstyle.css">
                            <font>
                               <Font name="Montserrat Medium" size="14.0" />
                            </font>
@@ -111,9 +110,9 @@
                         </ImageView>
                      </children>
                   </AnchorPane>
-                  <AnchorPane fx:id="signup_form" layoutX="47.0" layoutY="58.0" prefHeight="520.0" prefWidth="312.0" styleClass="black-bg">
+                  <AnchorPane fx:id="signup_form" layoutX="47.0" layoutY="58.0" prefHeight="520.0" prefWidth="312.0" styleClass="black-bg" visible="false">
                      <children>
-                        <Label layoutX="99.0" layoutY="419.0" text="Sign In Account" textFill="WHITE">
+                        <Label layoutX="100.0" layoutY="431.0" text="Sign In Account" textFill="WHITE">
                            <font>
                               <Font name="Montserrat Medium" size="14.0" />
                            </font>

@@ -19,7 +19,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1306.0" stylesheets="@foxstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foxably.HomeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1306.0" stylesheets="@foxstyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foxably.Controller.HomeController">
    <top>
       <HBox prefHeight="60.0" prefWidth="1306.0" styleClass="frame07" stylesheets="@foxstyle.css" BorderPane.alignment="CENTER">
          <padding>
@@ -117,7 +117,7 @@
                         </DropShadow>
                      </effect>
                      <children>
-                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="trans" stylesheets="@foxstyle.css">
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="frame09" stylesheets="@foxstyle.css">
                            <VBox.margin>
                               <Insets top="40.0" />
                            </VBox.margin>
@@ -137,7 +137,7 @@
                               </Button>
                            </children>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="frame09" stylesheets="@foxstyle.css">
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="trans" stylesheets="@foxstyle.css">
                            <children>
                               <ImageView fitHeight="32.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
