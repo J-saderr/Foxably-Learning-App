@@ -54,7 +54,7 @@ public class MainController {
     }
 
     public void switchToTodolist(ActionEvent event) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/com/example/foxably/content-view.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/com/example/foxably/todo-view.fxml"));
         scene = new Scene(root);
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);

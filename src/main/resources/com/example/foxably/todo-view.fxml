@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="rootPane" prefHeight="840.0" prefWidth="1306.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foxably.Todo.TodoController">
+    <top>
+        <HBox alignment="CENTER" spacing="10.0" BorderPane.alignment="CENTER">
+         <HBox prefHeight="60.0" prefWidth="1306.0" styleClass="frame07" stylesheets="@foxstyle.css">
+            <padding>
+               <Insets left="30.0" right="30.0" />
+            </padding>
+            <effect>
+               <DropShadow height="40.0" radius="19.5" width="40.0">
+                  <color>
+                     <Color red="0.7763158082962036" green="0.49262508749961853" blue="0.24439571797847748" />
+                  </color>
+               </DropShadow>
+            </effect>
+            <children>
+               <Pane prefHeight="60.0" prefWidth="174.0">
+                  <children>
+                     <ImageView fitHeight="46.0" fitWidth="59.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@icon/foxicon.png" />
+                        </image>
+                        <effect>
+                           <DropShadow height="36.0" radius="17.5" width="36.0">
+                              <color>
+                                 <Color red="0.8274509906768799" green="0.3607843220233917" blue="0.1921568661928177" />
+                              </color>
+                           </DropShadow>
+                        </effect>
+                     </ImageView>
+                     <Label layoutX="57.0" layoutY="6.0" prefHeight="49.0" prefWidth="132.0" text="FOXABLY" textFill="WHITE">
+                        <font>
+                           <Font name="Montserrat Black" size="20.0" />
+                        </font>
+                        <effect>
+                           <DropShadow height="36.0" radius="17.5" width="36.0">
+                              <color>
+                                 <Color red="0.8274509906768799" green="0.3607843220233917" blue="0.1921568661928177" />
+                              </color>
+                           </DropShadow>
+                        </effect>
+                     </Label>
+                  </children>
+               </Pane>
+               <Pane maxHeight="-Infinity" prefHeight="43.0" prefWidth="423.0" styleClass="frame01" stylesheets="@foxstyle.css">
+                  <HBox.margin>
+                     <Insets left="600.0" top="8.0" />
+                  </HBox.margin>
+                  <children>
+                     <Pane layoutX="11.0" prefHeight="43.0" prefWidth="41.0">
+                        <children>
+                           <ImageView fitHeight="26.0" fitWidth="23.0" layoutX="3.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@icon/search.png" />
+                              </image>
+                           </ImageView>
+                        </children>
+                     </Pane>
+                     <TextField layoutX="37.0" layoutY="9.0" prefHeight="25.0" prefWidth="362.0" promptText="Search for courses..." styleClass="trans" stylesheets="@foxstyle.css">
+                        <font>
+                           <Font name="Montserrat Light Italic" size="15.0" />
+                        </font>
+                     </TextField>
+                  </children>
+                  <effect>
+                     <DropShadow height="36.0" radius="17.5" width="36.0">
+                        <color>
+                           <Color red="0.8026315569877625" green="0.49049708247184753" blue="0.28240740299224854" />
+                        </color>
+                     </DropShadow>
+                  </effect>
+               </Pane>
+               <ImageView fitHeight="48.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@icon/foxuser.png" />
+                  </image>
+                  <HBox.margin>
+                     <Insets left="15.0" top="5.0" />
+                  </HBox.margin>
+               </ImageView>
+            </children>
+         </HBox>
+        </HBox>
+    </top>
+   <right>
+      <VBox prefHeight="718.0" prefWidth="310.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="75.0" prefWidth="978.0" text="Add new task">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="20.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.929411768913269" green="0.4627451002597809" blue="0.3686274588108063" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9966442953020134">
+                           <color>
+                              <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.9960784316062927" green="0.658823549747467" blue="0.3450980484485626" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <TextField fx:id="titleField" prefHeight="27.0" prefWidth="248.0" promptText="Title" styleClass="frame01" stylesheets="@foxstyle.css">
+               <VBox.margin>
+                  <Insets right="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Montserrat Medium" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.75" green="0.75" blue="0.75" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+            <DatePicker fx:id="dateField" prefHeight="40.0" prefWidth="291.0" promptText="Date">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </DatePicker>
+            <Button onAction="#addTask" prefHeight="31.0" prefWidth="76.0" styleClass="frame03" stylesheets="@foxstyle.css" text="Add">
+               <VBox.margin>
+                  <Insets left="210.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Montserrat ExtraBold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.8026315569877625" green="0.8026315569877625" blue="0.8026315569877625" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </VBox>
+   </right>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="796.0" prefWidth="100.0" stylesheets="@foxstyle.css">
+               <children>
+                  <VBox prefHeight="446.0" prefWidth="58.0" styleClass="frame01" stylesheets="@foxstyle.css">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <effect>
+                        <DropShadow height="36.0" radius="17.5" width="36.0">
+                           <color>
+                              <Color red="0.8552631735801697" green="0.8552631735801697" blue="0.8552631735801697" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="trans" stylesheets="@foxstyle.css">
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fitHeight="32.0" fitWidth="160.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icon/home.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Button fx:id="Home" mnemonicParsing="false" prefHeight="61.0" prefWidth="81.0" styleClass="trans">
+                                 <HBox.margin>
+                                    <Insets left="-40.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="trans" stylesheets="@foxstyle.css">
+                           <children>
+                              <ImageView fitHeight="32.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icon/course.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="-15.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Button fx:id="Course" mnemonicParsing="false" prefHeight="54.0" prefWidth="65.0" styleClass="trans">
+                                 <HBox.margin>
+                                    <Insets left="-40.0" right="-40.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="frame09">
+                           <children>
+                              <ImageView fitHeight="32.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icon/todolist.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="-10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="56.0" styleClass="trans">
+                                 <HBox.margin>
+                                    <Insets left="-30.0" right="-40.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="55.0" prefWidth="70.0" styleClass="trans" stylesheets="@foxstyle.css">
+                           <children>
+                              <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icon/chat.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="-20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="75.0" styleClass="trans">
+                                 <HBox.margin>
+                                    <Insets left="-40.0" right="-50.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="150.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="25.0" right="25.0" top="25.0" />
+         </BorderPane.margin>
+         <children>
+            <ListView fx:id="taskList" prefHeight="453.0" prefWidth="846.0">
+               <effect>
+                  <DropShadow height="60.0" radius="29.5" width="60.0">
+                     <color>
+                        <Color red="0.8815789222717285" green="0.8815789222717285" blue="0.8815789222717285" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ListView>
+            <ListView fx:id="doneList" prefHeight="239.0" prefWidth="846.0">
+               <effect>
+                  <DropShadow height="60.0" radius="29.5" width="60.0">
+                     <color>
+                        <Color red="0.8815789222717285" green="0.8815789222717285" blue="0.8815789222717285" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ListView>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="TOP_RIGHT" prefHeight="62.0" prefWidth="1141.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button graphicTextGap="0.0" onAction="#doneTask" prefHeight="48.0" prefWidth="115.0" styleClass="frame03" stylesheets="@foxstyle.css" text="Done" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.7894737124443054" green="0.7894737124443054" blue="0.7894737124443054" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <opaqueInsets>
+                  <Insets left="100.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="600.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button graphicTextGap="0.0" onAction="#deleteTask" prefHeight="48.0" prefWidth="121.0" styleClass="frame04" stylesheets="@foxstyle.css" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.7894737124443054" green="0.7894737124443054" blue="0.7894737124443054" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <opaqueInsets>
+                  <Insets left="5000.0" />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets right="340.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
