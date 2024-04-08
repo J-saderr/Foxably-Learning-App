@@ -198,7 +198,7 @@
                                     <Insets left="20.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <Button fx:id="Home" mnemonicParsing="false" prefHeight="61.0" prefWidth="81.0" styleClass="trans">
+                              <Button fx:id="Home" mnemonicParsing="false" onAction="#switchToHome" prefHeight="61.0" prefWidth="81.0" styleClass="trans">
                                  <HBox.margin>
                                     <Insets left="-40.0" />
                                  </HBox.margin>
@@ -215,7 +215,7 @@
                                     <Insets left="-15.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <Button fx:id="Course" mnemonicParsing="false" prefHeight="54.0" prefWidth="65.0" styleClass="trans">
+                              <Button fx:id="Course" mnemonicParsing="false" onAction="#switchToCourse" prefHeight="54.0" prefWidth="65.0" styleClass="trans">
                                  <HBox.margin>
                                     <Insets left="-40.0" right="-40.0" />
                                  </HBox.margin>
@@ -235,7 +235,7 @@
                                     <Insets left="-10.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="56.0" styleClass="trans">
+                              <Button mnemonicParsing="false" onAction="#switchToTodolist" prefHeight="51.0" prefWidth="56.0" styleClass="trans">
                                  <HBox.margin>
                                     <Insets left="-30.0" right="-40.0" />
                                  </HBox.margin>
@@ -255,7 +255,7 @@
                                     <Insets left="-20.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <Button mnemonicParsing="false" prefHeight="58.0" prefWidth="75.0" styleClass="trans">
+                              <Button mnemonicParsing="false" onAction="#switchToChat" prefHeight="58.0" prefWidth="75.0" styleClass="trans">
                                  <HBox.margin>
                                     <Insets left="-40.0" right="-50.0" />
                                  </HBox.margin>

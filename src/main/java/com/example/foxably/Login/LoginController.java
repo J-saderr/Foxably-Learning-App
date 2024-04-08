@@ -116,11 +116,10 @@ public class LoginController implements Initializable {
                 prepare = connect.prepareStatement(selectData);
                 prepare.setString(1, login_username.getText());
                 prepare.setString(2, login_password.getText());
-
                 result = prepare.executeQuery();
 
                 if (result.next()) {
-
+                    getData.userid = result.getString("users_id");
                     getData.username = login_username.getText();
 
                     alert.successMessage("Successfully Login!");

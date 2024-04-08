@@ -245,7 +245,7 @@
                         </LinearGradient>
                      </textFill>
                   </Label>
-                  <Label prefHeight="29.0" prefWidth="1114.0" text="NAME OF COURSE">
+                  <Label fx:id="nameOfCourse" prefHeight="29.0" prefWidth="1114.0" text="NAME OF COURSE">
                      <font>
                         <Font name="Montserrat ExtraBold" size="50.0" />
                      </font>
@@ -274,7 +274,7 @@
                         <Insets left="50.0" />
                      </VBox.margin>
                   </Label>
-                  <JFXTextArea editable="false" focusColor="#eb755e00" prefHeight="70.0" prefWidth="1113.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." unFocusColor="#ffffff00">
+                  <JFXTextArea fx:id="description" editable="false" focusColor="#eb755e00" prefHeight="70.0" prefWidth="1113.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." unFocusColor="#ffffff00">
                      <font>
                         <Font name="Montserrat Medium" size="14.0" />
                      </font>
@@ -306,7 +306,7 @@
                         </LinearGradient>
                      </textFill>
                   </JFXButton>
-                  <JFXButton text="Chapter 1." underline="true">
+                  <JFXButton onAction="#Chapter1" text="Chapter 1." underline="true">
                      <font>
                         <Font name="Montserrat SemiBold" size="15.0" />
                      </font>
@@ -330,7 +330,7 @@
                         <Insets left="50.0" right="50.0" />
                      </VBox.margin>
                   </JFXButton>
-                  <JFXButton text="Chapter 2." underline="true">
+                  <JFXButton onAction="#Chapter2" text="Chapter 2." underline="true">
                      <font>
                         <Font name="Montserrat SemiBold" size="15.0" />
                      </font>
@@ -354,7 +354,7 @@
                         <Insets left="50.0" />
                      </VBox.margin>
                   </JFXButton>
-                  <JFXButton text="Chapter 3." underline="true">
+                  <JFXButton onAction="#Chapter3" text="Chapter 3." underline="true">
                      <font>
                         <Font name="Montserrat SemiBold" size="15.0" />
                      </font>
@@ -378,7 +378,7 @@
                         <Insets left="50.0" />
                      </VBox.margin>
                   </JFXButton>
-                  <JFXButton text="Chapter 4." underline="true">
+                  <JFXButton onAction="#Chapter4" text="Chapter 4." underline="true">
                      <font>
                         <Font name="Montserrat SemiBold" size="15.0" />
                      </font>
@@ -402,7 +402,7 @@
                         <Insets left="50.0" />
                      </VBox.margin>
                   </JFXButton>
-                  <JFXButton text="Chapter 5." underline="true">
+                  <JFXButton onAction="#Chapter5" text="Chapter 5." underline="true">
                      <font>
                         <Font name="Montserrat SemiBold" size="15.0" />
                      </font>

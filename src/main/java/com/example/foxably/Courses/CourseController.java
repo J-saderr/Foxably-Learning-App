@@ -1,5 +1,6 @@
 package com.example.foxably.Courses;
 
+import com.example.foxably.Login.getData;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,12 +14,6 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.InputStream;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
-import static com.example.foxably.Controller.MainController.connectDb;
 
 public class CourseController {
     @FXML
@@ -31,23 +26,22 @@ public class CourseController {
     private Label Company;
     @FXML
     private Button Path;
+    private Course myCourse;
 
     private Scene scene;
     private Stage stage;
-    private Course Courses;
 
     public void setData(Course Courses){
         try {
-//            String filePathFromMySQL = getFilePathFromMySQL(Courses.getCourseId());
+            myCourse = Courses;
             InputStream inputStream = getClass().getResourceAsStream(Courses.getImage());
-
+            System.out .println(myCourse.getImage());
             if (inputStream != null) {
                 Image image = new Image(inputStream);
                 img.setImage(image);
             } else {
                 System.err.println("Image not found: " + Courses.getImage());
             }
-//            Path.setText(filePathFromMySQL);
         } catch (Exception e) {
             e.printStackTrace();
             System.err.println("Error loading image: " + e.getMessage());
@@ -57,60 +51,31 @@ public class CourseController {
         Company.setText(Courses.getCompany());
 
     }
-//    private String getFilePathFromMySQL(int courseId) {
-//        String filePath = null;
-//        Connection connection = null;
-//        PreparedStatement preparedStatement = null;
-//        ResultSet resultSet = null;
-//
-//        try {
-//            connection = connectDb(); // Kết nối đến cơ sở dữ liệu
-//            String query = "SELECT * FROM course WHERE course_id = ?";
-//            preparedStatement = connection.prepareStatement(query);
-//            preparedStatement.setInt(1, courseId);
-//            resultSet = preparedStatement.executeQuery();
-//
-//            if (resultSet.next()) {
-//                filePath = resultSet.getString("file_path");
-//            }
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//            System.err.println("Error querying database: " + e.getMessage());
-//        } finally {
-//            try {
-//                if (resultSet != null) {
-//                    resultSet.close();
-//                }
-//                if (preparedStatement != null) {
-//                    preparedStatement.close();
-//                }
-//                if (connection != null) {
-//                    connection.close();
-//                }
-//            } catch (SQLException e) {
-//                e.printStackTrace();
-//                System.err.println("Error closing resources: " + e.getMessage());
-//            }
-//        }
-//
-//        return filePath;
-//    }
-//
-//    public void GoToCourse(ActionEvent event) {
-//        try {
-//            String filePathFromMySQL = getFilePathFromMySQL(Courses.getCourseId());
-//            if (filePathFromMySQL != null && !filePathFromMySQL.isEmpty()) {
-//                Parent root = FXMLLoader.load(getClass().getResource(filePathFromMySQL));
-//                Scene scene = new Scene(root);
-//                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//                stage.setScene(scene);
-//                stage.show();
-//            } else {
-//                System.err.println("File path is null or empty.");
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            System.err.println("Error switching to course scene: " + e.getMessage());
-//        }
-//    }
+
+    public void GoToCourse(ActionEvent event) {
+        try {
+            String path = myCourse.getPath();
+            getData.courseid = myCourse.getCourseId();
+            getData.coursename = myCourse.getTitle();
+            getData.detailChapter0= myCourse.getChapter0();
+            getData.detailChapter1= myCourse.getChapter1();
+            getData.detailChapter2= myCourse.getChapter2();
+            getData.detailChapter3= myCourse.getChapter3();
+            getData.detailChapter4= myCourse.getChapter4();
+            getData.detailChapter5= myCourse.getChapter5();
+
+            if (path != null && !path.isEmpty()) {
+                Parent root = FXMLLoader.load(getClass().getResource(path));
+                Scene scene = new Scene(root);
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(scene);
+                stage.show();
+            } else {
+                System.err.println("Course path is null or empty.");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("Error switching to course scene: " + e.getMessage());
+        }
+    }
 }

@@ -10,7 +10,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="220.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.foxably.Courses.CourseController">
    <children>
-      <Button fx:id="Path" mnemonicParsing="false" prefHeight="257.0" prefWidth="220.0" styleClass="trans" stylesheets="@foxstyle.css">
+      <Button fx:id="Path" mnemonicParsing="false" onAction="#GoToCourse" prefHeight="257.0" prefWidth="220.0" styleClass="trans" stylesheets="@foxstyle.css">
          <graphic>
             <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="254.0" prefWidth="200.0" styleClass="primary_color" stylesheets="@foxstyle.css">
                <children>

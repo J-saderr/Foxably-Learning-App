@@ -71,8 +71,16 @@ public class ControllerInCourse extends MainController implements Initializable 
             Course CourseD;
 
             while(result.next()){
-                CourseD = new Course(result.getString("title")
-                        , result.getString("company"), result.getString("image") );
+                CourseD = new Course(result.getInt("course_id"), result.getString("title")
+                        , result.getString("company")
+                        , result.getString("image")
+                        , result.getString("path")
+                        , result.getString("chapter0")
+                        , result.getString("chapter1")
+                        , result.getString("chapter2")
+                        , result.getString("chapter3")
+                        , result.getString("chapter4")
+                        , result.getString("chapter5"));
 
                 RD.add(CourseD);
             }

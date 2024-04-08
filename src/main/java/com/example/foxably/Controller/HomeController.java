@@ -43,13 +43,33 @@ public class HomeController extends MainController implements Initializable {
         }
     }
     public List<Course> getAllCourses(){
-        List<Course> RD = new ArrayList<>();
+        List<Course> RD = FXCollections.observableArrayList();
 
-        Course Course = new Course();
-        Course.setTitle("Data Analytic");
-        Course.setCompany("Google");
-        Course.setImage("/com/example/foxably/icon/course.png");
-        RD.add(Course);
+        String sql = "SELECT * FROM course";
+
+        connect = connectDb();
+
+        try{
+            prepare = connect.prepareStatement(sql);
+            result = prepare.executeQuery();
+
+            Course CourseD;
+
+            while(result.next()){
+                CourseD = new Course(result.getInt("course_id"), result.getString("title")
+                        , result.getString("company")
+                        , result.getString("image")
+                        , result.getString("path")
+                        , result.getString("chapter0")
+                        , result.getString("chapter1")
+                        , result.getString("chapter2")
+                        , result.getString("chapter3")
+                        , result.getString("chapter4")
+                        , result.getString("chapter5"));
+
+                RD.add(CourseD);
+            }
+        }catch(Exception e){e.printStackTrace();}
 
         return RD;
     }
